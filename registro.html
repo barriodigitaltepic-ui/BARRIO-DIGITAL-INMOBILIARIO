@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro | Barrio Digital Inmobiliario</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+background:#0d0d0d;
+color:white;
+font-family:'Montserrat',sans-serif;
+padding:120px 8%;
+}
+
+.form-container{
+max-width:1100px;
+margin:auto;
+background:#111;
+padding:50px;
+border-radius:35px;
+border:1px solid rgba(212,175,55,.22);
+box-shadow:0 25px 70px rgba(0,0,0,.55);
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:58px;
+color:#d4af37;
+margin-bottom:25px;
+text-align:center;
+}
+
+.form-description{
+text-align:center;
+max-width:850px;
+margin:0 auto 50px;
+line-height:1.9;
+color:#ddd;
+font-size:18px;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-bottom:25px;
+}
+
+.full{
+grid-column:1/-1;
+}
+
+input,
+textarea{
+width:100%;
+padding:18px;
+border-radius:18px;
+border:1px solid rgba(212,175,55,.18);
+background:#1a1a1a;
+color:white;
+font-size:16px;
+outline:none;
+}
+
+textarea{
+min-height:130px;
+resize:vertical;
+}
+
+label{
+display:block;
+margin-bottom:12px;
+color:#d4af37;
+font-weight:700;
+}
+
+.product-box{
+margin-top:40px;
+padding:30px;
+border-radius:28px;
+background:#151515;
+border:1px solid rgba(212,175,55,.14);
+}
+
+.product-box h2{
+font-family:'Playfair Display',serif;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.btn-submit{
+display:block;
+width:100%;
+padding:22px;
+border:none;
+border-radius:40px;
+background:#d4af37;
+color:#000;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+margin-top:45px;
+}
+
+.btn-submit:hover{
+background:white;
+}
+
+.note{
+margin-top:35px;
+line-height:1.9;
+color:#bdbdbd;
+font-size:15px;
+text-align:center;
+}
+
+@media(max-width:850px){
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+h1{
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h1>
+Registro de afiliados
+</h1>
+
+<p class="form-description">
+
+Completa la siguiente información para comenzar el proceso de integración dentro de Barrio Digital Inmobiliario. Posteriormente podrás enviarnos fotografías y material visual por WhatsApp.
+
+</p>
+
+<form id="registroForm">
+
+<div class="form-grid">
+
+<div>
+<label>
+Nombre del negocio
+</label>
+
+<input type="text" id="negocio">
+</div>
+
+<div>
+<label>
+Nombre del representante
+</label>
+
+<input type="text" id="representante">
+</div>
+
+<div>
+<label>
+Teléfono
+</label>
+
+<input type="text" id="telefono">
+</div>
+
+<div>
+<label>
+Correo electrónico
+</label>
+
+<input type="email" id="correo">
+</div>
+
+<div class="full">
+<label>
+Descripción general del negocio
+</label>
+
+<textarea id="descripcion"></textarea>
+</div>
+
+</div>
+
+<div class="product-box">
+
+<h2>
+4 productos o propiedades ancla
+</h2>
+
+<div class="form-grid">
+
+<!-- PRODUCTO 1 -->
+
+<div>
+<label>
+Producto 1
+</label>
+<input type="text" id="producto1">
+</div>
+
+<div>
+<label>
+Precio
+</label>
+<input type="text" id="precio1">
+</div>
+
+<div class="full">
+<label>
+Descripción
+</label>
+<textarea id="desc1"></textarea>
+</div>
+
+<!-- PRODUCTO 2 -->
+
+<div>
+<label>
+Producto 2
+</label>
+<input type="text" id="producto2">
+</div>
+
+<div>
+<label>
+Precio
+</label>
+<input type="text" id="precio2">
+</div>
+
+<div class="full">
+<label>
+Descripción
+</label>
+<textarea id="desc2"></textarea>
+</div>
+
+<!-- PRODUCTO 3 -->
+
+<div>
+<label>
+Producto 3
+</label>
+<input type="text" id="producto3">
+</div>
+
+<div>
+<label>
+Precio
+</label>
+<input type="text" id="precio3">
+</div>
+
+<div class="full">
+<label>
+Descripción
+</label>
+<textarea id="desc3"></textarea>
+</div>
+
+<!-- PRODUCTO 4 -->
+
+<div>
+<label>
+Producto 4
+</label>
+<input type="text" id="producto4">
+</div>
+
+<div>
+<label>
+Precio
+</label>
+<input type="text" id="precio4">
+</div>
+
+<div class="full">
+<label>
+Descripción
+</label>
+<textarea id="desc4"></textarea>
+</div>
+
+</div>
+
+</div>
+
+<!-- LISTADO PEQUEÑO -->
+
+<div class="product-box">
+
+<h2>
+6 propiedades o productos adicionales
+</h2>
+
+<div class="form-grid">
+
+<div>
+<label>
+Listado adicional
+</label>
+
+<textarea id="extras" placeholder="Ejemplo:
+
+• Casa en Tepic — $2,450,000
+• Terreno comercial — $6,500,000
+• Departamento en Vallarta — $4,800,000"></textarea>
+
+</div>
+
+</div>
+
+</div>
+
+<button type="button" class="btn-submit" onclick="sendWhatsApp()">
+Enviar información por WhatsApp
+</button>
+
+<p class="note">
+
+Las fotografías, logotipos y material visual pueden enviarse posteriormente por WhatsApp para integrarlos dentro de Barrio Digital Inmobiliario.
+
+</p>
+
+</form>
+
+</div>
+
+<script>
+
+function sendWhatsApp(){
+
+const negocio = document.getElementById('negocio').value;
+const representante = document.getElementById('representante').value;
+const telefono = document.getElementById('telefono').value;
+const correo = document.getElementById('correo').value;
+const descripcion = document.getElementById('descripcion').value;
+
+const producto1 = document.getElementById('producto1').value;
+const precio1 = document.getElementById('precio1').value;
+const desc1 = document.getElementById('desc1').value;
+
+const producto2 = document.getElementById('producto2').value;
+const precio2 = document.getElementById('precio2').value;
+const desc2 = document.getElementById('desc2').value;
+
+const producto3 = document.getElementById('producto3').value;
+const precio3 = document.getElementById('precio3').value;
+const desc3 = document.getElementById('desc3').value;
+
+const producto4 = document.getElementById('producto4').value;
+const precio4 = document.getElementById('precio4').value;
+const desc4 = document.getElementById('desc4').value;
+
+const extras = document.getElementById('extras').value;
+
+const mensaje =
+`Hola, quiero registrar mi negocio en Barrio Digital Inmobiliario.
+
+NEGOCIO:
+${negocio}
+
+REPRESENTANTE:
+${representante}
+
+TELÉFONO:
+${telefono}
+
+CORREO:
+${correo}
+
+DESCRIPCIÓN:
+${descripcion}
+
+PRODUCTO 1:
+${producto1}
+
+PRECIO:
+${precio1}
+
+DESCRIPCIÓN:
+${desc1}
+
+PRODUCTO 2:
+${producto2}
+
+PRECIO:
+${precio2}
+
+DESCRIPCIÓN:
+${desc2}`;
+
+const mensaje =
+`Hola, quiero registrar mi negocio en Barrio Digital Inmobiliario.
+
+NEGOCIO:
+${negocio}
+
+REPRESENTANTE:
+${representante}
+
+TELÉFONO:
+${telefono}
+
+CORREO:
+${correo}
+
+DESCRIPCIÓN:
+${descripcion}
+
+PRODUCTO 1:
+${producto1}
+
+PRECIO:
+${precio1}
+
+DESCRIPCIÓN:
+${desc1}
+
+PRODUCTO 2:
+${producto2}
+
+PRECIO:
+${precio2}
+
+DESCRIPCIÓN:
+${desc2}
+
+PRODUCTO 3:
+${producto3}
+
+PRECIO:
+${precio3}
+
+DESCRIPCIÓN:
+${desc3}
+
+PRODUCTO 4:
+${producto4}
+
+PRECIO:
+${precio4}
+
+DESCRIPCIÓN:
+${desc4}
+
+LISTADO ADICIONAL:
+${extras}`;
+
+
+
+window.open(`https://wa.me/523221340289?text=${encodeURIComponent(mensaje)}`,'_blank');
+
+}
+
+</script>
+
+</body>
+
+</html>

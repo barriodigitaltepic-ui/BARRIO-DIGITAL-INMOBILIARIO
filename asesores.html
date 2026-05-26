@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="description" content="Asesores inmobiliarios independientes afiliados a Barrio Digital Inmobiliario especializados en inversión, terrenos y oportunidades patrimoniales.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asesores Independientes | Barrio Digital Inmobiliario</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+background:#0d0d0d;
+color:white;
+font-family:'Montserrat',sans-serif;
+}
+
+.listing-hero{
+min-height:55vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:140px 8% 90px;
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1800&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+
+.listing-hero-content{
+max-width:900px;
+}
+
+.listing-hero h1{
+font-family:'Playfair Display',serif;
+font-size:64px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.listing-hero p{
+font-size:20px;
+line-height:1.9;
+color:#eee;
+}
+
+.directory-section{
+padding:90px 8%;
+}
+
+.directory-list{
+max-width:1400px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:38px;
+}
+
+.directory-card{
+display:grid;
+grid-template-columns:260px 1fr 360px;
+gap:35px;
+align-items:center;
+background:#111;
+border:1px solid rgba(212,175,55,.22);
+border-radius:34px;
+padding:38px;
+box-shadow:0 25px 70px rgba(0,0,0,.55);
+transition:.35s;
+}
+
+.directory-card:hover{
+transform:translateY(-6px);
+border:1px solid rgba(212,175,55,.45);
+}
+
+.directory-logo{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:230px;
+border-right:1px solid rgba(212,175,55,.25);
+padding-right:30px;
+}
+
+.directory-logo img{
+max-width:220px;
+max-height:220px;
+object-fit:contain;
+border-radius:18px;
+}
+
+.placeholder-logo{
+border:1px solid rgba(212,175,55,.35);
+border-radius:28px;
+background:linear-gradient(135deg,#111,#1a1a1a);
+padding:20px;
+}
+
+.placeholder-logo span{
+font-family:'Playfair Display',serif;
+font-size:58px;
+color:#d4af37;
+font-weight:700;
+}
+
+.directory-info h2{
+font-family:'Playfair Display',serif;
+font-size:46px;
+color:#d4af37;
+margin-bottom:8px;
+}
+
+.directory-subtitle{
+font-size:18px;
+text-transform:uppercase;
+letter-spacing:2px;
+font-weight:700;
+color:#fff;
+margin-bottom:22px;
+}
+
+.directory-contact,
+.directory-location{
+font-size:16px;
+line-height:1.7;
+color:#cfcfcf;
+margin-bottom:8px;
+}
+
+.directory-buttons{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+margin-top:28px;
+}
+
+.directory-buttons a{
+display:inline-block;
+padding:14px 26px;
+border-radius:35px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-gold{
+background:#d4af37;
+color:#000;
+}
+
+.btn-gold:hover{
+background:white;
+}
+
+.directory-review{
+background:#151515;
+border:1px solid rgba(212,175,55,.16);
+border-radius:28px;
+padding:30px;
+min-height:230px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.directory-review h3{
+font-family:'Playfair Display',serif;
+font-size:34px;
+color:#d4af37;
+margin-bottom:18px;
+}
+
+.directory-review p{
+font-size:16px;
+line-height:1.8;
+color:#ddd;
+margin-bottom:18px;
+}
+
+.directory-review span{
+color:#d4af37;
+font-size:20px;
+letter-spacing:4px;
+}
+
+@media(max-width:1050px){
+
+.directory-card{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.directory-logo{
+border-right:none;
+border-bottom:1px solid rgba(212,175,55,.25);
+padding-right:0;
+padding-bottom:28px;
+}
+
+.directory-buttons{
+justify-content:center;
+}
+
+}
+
+@media(max-width:850px){
+
+.listing-hero h1{
+font-size:42px;
+}
+
+.listing-hero p{
+font-size:17px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-logo">
+Barrio Digital Inmobiliario
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">
+Inicio
+</a>
+
+<a href="inmobiliarias.html">
+Inmobiliarias
+</a>
+
+<a href="#">
+Asesores
+</a>
+
+<a href="desarrolladoras.html">
+Desarrolladoras
+</a>
+
+<a href="index.html#mapa">
+Mapa
+</a>
+
+</div>
+
+</nav>
+
+<section class="listing-hero">
+
+<div class="listing-hero-content">
+
+<h1>
+Asesores independientes
+</h1>
+
+<p>
+Conecta con asesores especializados en oportunidades inmobiliarias, terrenos estratégicos, propiedades comerciales y acompañamiento personalizado dentro del proceso patrimonial y de inversión.
+</p>
+
+</div>
+
+</section>
+
+<section class="directory-section">
+
+<div class="directory-list">
+
+<div class="directory-card">
+
+<div class="directory-logo">
+<img src="images/rodrigo-logo.png" alt="Rodrigo Maldonado Logo">
+</div>
+
+<div class="directory-info">
+
+<h2>
+Rodrigo Maldonado
+</h2>
+
+<p class="directory-subtitle">
+Asesor inmobiliario independiente
+</p>
+
+<p class="directory-contact">
+📧 ventas.rodrigomaldonado@gmail.com
+</p>
+
+<p class="directory-contact">
+📱 322 213 4029
+</p>
+
+<p class="directory-location">
+Puerto Vallarta · Riviera Nayarit · Tepic
+</p>
+
+<div class="directory-buttons">
+
+<a class="btn-gold" href="asesores/rodrigo-maldonado.html">
+Ver perfil
+</a>
+
+</div>
+
+</div>
+
+<div class="directory-review">
+
+<h3>
+Reseña
+</h3>
+
+<p>
+Asesor independiente enfocado en terrenos estratégicos, propiedades comerciales y oportunidades inmobiliarias con visión patrimonial y de crecimiento.
+</p>
+
+<span>
+★★★★★
+</span>
+
+</div>
+
+</div>
+
+<div class="directory-card">
+
+<div class="directory-logo placeholder-logo">
+<span>
+BDI
+</span>
+</div>
+
+<div class="directory-info">
+
+<h2>
+Espacio disponible
+</h2>
+
+<p class="directory-subtitle">
+Asesor independiente afiliado
+</p>
+
+<p class="directory-contact">
+📧 contacto disponible
+</p>
+
+<p class="directory-contact">
+📱 WhatsApp disponible
+</p>
+
+<p class="directory-location">
+Tepic · Riviera Nayarit · Puerto Vallarta
+</p>
+
+<div class="directory-buttons">
+
+<a class="btn-gold" href="https://wa.me/523221340289" target="_blank">
+Solicitar espacio
+</a>
+
+</div>
+
+</div>
+
+<div class="directory-review">
+
+<h3>
+Reseña
+</h3>
+
+<p>
+Este espacio puede ser utilizado por un asesor independiente interesado en presencia digital, exposición premium y posicionamiento dentro de Barrio Digital Inmobiliario.
+</p>
+
+<span>
+★★★★★
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© Barrio Digital Inmobiliario — Plataforma de exposición inmobiliaria.
+
+</footer>
+
+</body>
+
+</html>

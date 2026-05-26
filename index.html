@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Barrio Digital Inmobiliario</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- MUSICA -->
+
+<audio loop id="bg-music">
+<source src="music/jazz-lounge.mp3" type="audio/mpeg">
+</audio>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="nav-logo">
+Barrio Digital Inmobiliario
+</div>
+
+<div class="nav-links">
+
+<a href="#">Inicio</a>
+
+<a href="inmobiliarias.html">
+Inmobiliarias
+</a>
+
+<a href="asesores.html">
+Asesores
+</a>
+
+<a href="desarrolladoras.html">
+Desarrolladoras
+</a>
+
+<a href="#mapa">
+Mapa
+</a>
+
+<a href="https://wa.me/523221340289" target="_blank">
+Publicar propiedad
+</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>
+Barrio Digital Inmobiliario
+</h1>
+
+<p>
+Una plataforma inmobiliaria diseñada para conectar desarrollos, asesores independientes e inmobiliarias con personas en búsqueda de oportunidades patrimoniales, comerciales y de inversión.
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn btn-primary" href="#categorias">
+Explorar categorías
+</a>
+
+<a class="btn btn-secondary" href="#mapa">
+Ver mapa
+</a>
+
+<a class="btn btn-secondary" href="asesores.html">
+Asesores independientes
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- INTRO -->
+
+<section class="section">
+
+<h2 class="section-title">
+¿Qué es Barrio Digital Inmobiliario?
+</h2>
+
+<p class="section-text">
+
+Barrio Digital Inmobiliario funciona como un escaparate digital donde distintas inmobiliarias y asesores independientes pueden exponer desarrollos, terrenos, preventas, propiedades residenciales y oportunidades de inversión en un solo lugar.
+
+<br><br>
+
+Nuestro objetivo es facilitar conexiones estratégicas entre proyectos inmobiliarios y personas interesadas en explorar nuevas oportunidades patrimoniales, comerciales y de crecimiento.
+
+<br><br>
+
+Creemos que una buena decisión inmobiliaria comienza con información clara, opciones reales y asesores capaces de acompañar correctamente cada proceso.
+
+</p>
+
+</section>
+
+<!-- CATEGORIAS -->
+
+<section class="realestate-categories" id="categorias">
+
+<h2 class="section-title">
+Explora categorías inmobiliarias
+</h2>
+
+<div class="categories-grid">
+
+<!-- INMOBILIARIAS -->
+
+<div class="realestate-card">
+
+<h3>
+🏢 Inmobiliarias
+</h3>
+
+<p>
+Explora inmobiliarias enfocadas en desarrollos, preventas, propiedades residenciales, oportunidades patrimoniales y proyectos estratégicos en distintas zonas de crecimiento.
+</p>
+
+<a href="inmobiliarias.html">
+Explorar inmobiliarias
+</a>
+
+</div>
+
+<!-- ASESORES -->
+
+<div class="realestate-card">
+
+<h3>
+🤝 Asesores independientes
+</h3>
+
+<p>
+Conecta con asesores especializados en propiedades comerciales, terrenos, inversión patrimonial y acompañamiento personalizado dentro del proceso inmobiliario.
+</p>
+
+<a href="asesores.html">
+Ver asesores
+</a>
+
+</div>
+
+<!-- DESARROLLADORAS -->
+
+<div class="realestate-card">
+
+<h3>
+🏗️ Desarrolladoras
+</h3>
+
+<p>
+Próximamente podrás explorar desarrolladoras y proyectos enfocados en crecimiento urbano, vivienda vertical, comunidades privadas y oportunidades de inversión.
+</p>
+
+<a href="developers.html">
+Explorar opciones
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ARTICULO -->
+
+<section class="section luxury-article">
+
+<h2 class="section-title">
+Invertir también es elegir correctamente quién te acompaña
+</h2>
+
+<p class="section-text">
+
+Comprar un terreno, invertir en una preventa o adquirir una propiedad comercial no solamente implica revisar precios o ubicaciones. También significa entender plusvalía, crecimiento urbano, conectividad, demanda y proyección patrimonial.
+
+<br><br>
+
+Por eso, contar con asesoría inmobiliaria puede ayudarte a identificar oportunidades con mayor claridad, reducir riesgos y explorar opciones que realmente se adapten a tus objetivos personales o de inversión.
+
+<br><br>
+
+Barrio Digital Inmobiliario busca reunir diferentes perfiles, inmobiliarias y propuestas para que cada persona pueda comparar alternativas y tomar decisiones con mayor confianza.
+
+</p>
+
+</section>
+
+<!-- MAPA -->
+
+<section class="mapa-section" id="mapa"></div>
+
+<h2 class="section-title">
+Mapa de afiliados
+</h2>
+
+<p class="mapa-subtitulo">
+
+Explora asesores e inmobiliarias afiliadas a Barrio Digital Inmobiliario por ubicación.
+
+</p>
+
+<div id="affiliate-map"></div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="section contact">
+
+<h2 class="section-title">
+¿Quieres formar parte?
+</h2>
+
+<p>
+
+Si eres asesor independiente, inmobiliaria o desarrolladora y deseas formar parte de Barrio Digital Inmobiliario, contáctanos para conocer las opciones de exposición y posicionamiento disponibles.
+
+</p>
+
+<a class="btn btn-primary" href="registro.html">
+Solicita mas Informacio
+</a>
+
+</section>
+
+<footer>
+
+© Barrio Digital Inmobiliario — Plataforma de exposición inmobiliaria.
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
