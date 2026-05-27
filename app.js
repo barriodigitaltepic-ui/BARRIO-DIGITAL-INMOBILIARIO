@@ -3,7 +3,7 @@ const affiliates = [
     name:"Torrez & Maldonado",
     type:"Inmobiliaria",
     coords:[20.6534,-105.2253],
-    link:"inmobiliarias/torrez-maldonado.html"
+    link:"inmobiliarias/https://barriodigitaltepic-ui.github.io/PERFIL-TORREZ-MALDONADO/"
   },
   {
     name:"Rodrigo Maldonado",
